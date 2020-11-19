@@ -67,3 +67,20 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 "# react-calculator" 
+
+#self-note
+```
+使用:
+  CML輸入npm run start
+  本計算機程式可以輸入一整個算式(+ - * / . 運算)然後點擊Enter計算出結果
+  本機程式在輸入時會要求符號(+ - * / .)不相連，因此負數無法計算 ex (當輸入 "+" 後再輸入 "-" 程式會視為不當輸入而不加入算式)
+開發工具:
+  nodejs
+  reactjs
+  useState
+  useReducer
+開發心得:
+  用useState來記錄算式的字串
+  用useReducer來監聽算式的字串，並在 typing append或clear或enter result時，才去觸發render
+  ***useReducer 用 dispatch 傳回的 ACTION的值來判斷為哪種操作***
+```
